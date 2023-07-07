@@ -1,0 +1,53 @@
+
+
+.grid-container {
+    width: 600px;
+    display:grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+}
+
+label {
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    margin:0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.selectarea{
+    width:max-content;
+    margin:0 auto;
+}
+
+@media screen and (max-width:600px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        width: auto;
+    }
+    h1{
+        background: 100%;
+    }
+}
+
+@media screen and (min-width:601px){
+    .grid-container{
+        margin:0 auto;
+    }
+}
+
+@media screen and (max-width:320px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+select{
+    margin:0 auto;
+    font-size: 16px;
+    text-align: center;
+}
